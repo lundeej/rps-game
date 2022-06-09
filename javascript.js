@@ -12,5 +12,11 @@ var userChoice = myChoice;
 
 if (myChoice === computerChoice){
     alert("Tie");
+} else if (myChoice === "R" && computerChoice === "S"){
+alert("Win");
+} else if(myChoice === "S" && computerChoice ==="P"){
+    alert("Win");
+} else (){
+    alert("Loss");
 }
 
