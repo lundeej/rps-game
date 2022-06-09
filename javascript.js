@@ -1,10 +1,16 @@
-var choice = prompt("Choose R, P, or S");
+var myChoice = prompt("Choose R, P, or S");
 
-var computerChoice = ["R","P","S"];
+var choices = ["R","P","S"];
 
-var userChoice = choice;
+var randomChoice = Math.floor(Math.random() * 3); //Gives a random number between 0-2
 
-if (choice === computerChoice){
+var computerChoice = choices[randomChoice];
+
+console.log(computerChoice);
+
+var userChoice = myChoice;
+
+if (myChoice === computerChoice){
     alert("Tie");
 }
 
